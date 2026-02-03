@@ -21,5 +21,10 @@ namespace CSharpEgitimKampi501
         {
 
         }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
