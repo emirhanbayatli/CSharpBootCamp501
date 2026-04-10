@@ -48,8 +48,6 @@
             this.lblIsBankBalance = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblBankProcess5 = new System.Windows.Forms.Label();
-            this.lblBankProcess4 = new System.Windows.Forms.Label();
             this.lblBankProcess3 = new System.Windows.Forms.Label();
             this.lblBankProcess2 = new System.Windows.Forms.Label();
             this.lblBankProcess1 = new System.Windows.Forms.Label();
@@ -307,8 +305,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.lblBankProcess5);
-            this.groupBox1.Controls.Add(this.lblBankProcess4);
             this.groupBox1.Controls.Add(this.lblBankProcess3);
             this.groupBox1.Controls.Add(this.lblBankProcess2);
             this.groupBox1.Controls.Add(this.lblBankProcess1);
@@ -321,24 +317,6 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Son Banka Hareketleri";
-            // 
-            // lblBankProcess5
-            // 
-            this.lblBankProcess5.AutoSize = true;
-            this.lblBankProcess5.Location = new System.Drawing.Point(17, 261);
-            this.lblBankProcess5.Name = "lblBankProcess5";
-            this.lblBankProcess5.Size = new System.Drawing.Size(62, 23);
-            this.lblBankProcess5.TabIndex = 5;
-            this.lblBankProcess5.Text = "label10";
-            // 
-            // lblBankProcess4
-            // 
-            this.lblBankProcess4.AutoSize = true;
-            this.lblBankProcess4.Location = new System.Drawing.Point(17, 197);
-            this.lblBankProcess4.Name = "lblBankProcess4";
-            this.lblBankProcess4.Size = new System.Drawing.Size(55, 23);
-            this.lblBankProcess4.TabIndex = 4;
-            this.lblBankProcess4.Text = "label9";
             // 
             // lblBankProcess3
             // 
@@ -429,8 +407,6 @@
         private System.Windows.Forms.Label lblIsBankBalance;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblBankProcess5;
-        private System.Windows.Forms.Label lblBankProcess4;
         private System.Windows.Forms.Label lblBankProcess3;
         private System.Windows.Forms.Label lblBankProcess2;
         private System.Windows.Forms.Label lblBankProcess1;
