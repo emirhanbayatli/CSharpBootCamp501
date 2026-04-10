@@ -194,6 +194,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="screenshots\banka-hesap-yeni.png" />
+    <Content Include="screenshots\banka-islemleri-yeni.png" />
     <Content Include="screenshots\login.png" />
     <Content Include="screenshots\signup.png" />
     <Content Include="screenshots\dashboard.png" />
