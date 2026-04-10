@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="CSharpEgitimKampi501/CSharpEgitimKampi501.csproj" />
+  <Project Path="CSharpEgitimKampi501/CSharpEgitimKampi501.csproj" Id="31a5221b-d9a2-4d55-b1fd-82dffa87e723" />
+  <Project Path="CSharpEgitimKampi601/CSharpEgitimKampi601.csproj" Id="ebd744ca-27c0-4654-9723-5d5490c16d61" />
+  <Project Path="FinancialCrm/FinancialCrm.csproj" Id="276f6d54-bea6-4100-92ae-f6be76f16c8d" />
 </Solution>
