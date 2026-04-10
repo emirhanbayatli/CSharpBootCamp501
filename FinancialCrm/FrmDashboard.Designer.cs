@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblLastBankProcessAmount = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -50,7 +50,6 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.frmBillForm = new System.Windows.Forms.Button();
-            this.btnBillForm = new System.Windows.Forms.Button();
             this.btnBankForm = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -191,13 +190,14 @@
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.btnLogOut.ForeColor = System.Drawing.Color.IndianRed;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 485);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 431);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnLogOut.Size = new System.Drawing.Size(250, 50);
             this.btnLogOut.TabIndex = 0;
             this.btnLogOut.Text = "Çıkış Yap";
             this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // button6
             // 
@@ -206,7 +206,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 430);
+            this.button6.Location = new System.Drawing.Point(0, 376);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.button6.Size = new System.Drawing.Size(250, 50);
@@ -221,7 +221,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(0, 375);
+            this.button7.Location = new System.Drawing.Point(0, 321);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.button7.Size = new System.Drawing.Size(250, 50);
@@ -236,13 +236,14 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(0, 320);
+            this.button8.Location = new System.Drawing.Point(0, 266);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.button8.Size = new System.Drawing.Size(250, 50);
             this.button8.TabIndex = 3;
             this.button8.Text = "Banka Hareketleri";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // frmBillForm
             // 
@@ -251,29 +252,14 @@
             this.frmBillForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.frmBillForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.frmBillForm.ForeColor = System.Drawing.Color.White;
-            this.frmBillForm.Location = new System.Drawing.Point(0, 265);
+            this.frmBillForm.Location = new System.Drawing.Point(0, 211);
             this.frmBillForm.Name = "frmBillForm";
             this.frmBillForm.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.frmBillForm.Size = new System.Drawing.Size(250, 50);
             this.frmBillForm.TabIndex = 4;
             this.frmBillForm.Text = "Giderler";
             this.frmBillForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnBillForm
-            // 
-            this.btnBillForm.FlatAppearance.BorderSize = 0;
-            this.btnBillForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.btnBillForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBillForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.btnBillForm.ForeColor = System.Drawing.Color.White;
-            this.btnBillForm.Location = new System.Drawing.Point(0, 210);
-            this.btnBillForm.Name = "btnBillForm";
-            this.btnBillForm.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnBillForm.Size = new System.Drawing.Size(250, 50);
-            this.btnBillForm.TabIndex = 5;
-            this.btnBillForm.Text = "Faturalar";
-            this.btnBillForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBillForm.Click += new System.EventHandler(this.btnBillForm_Click);
+            this.frmBillForm.Click += new System.EventHandler(this.frmBillForm_Click);
             // 
             // btnBankForm
             // 
@@ -324,7 +310,6 @@
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.frmBillForm);
-            this.panel1.Controls.Add(this.btnBillForm);
             this.panel1.Controls.Add(this.btnBankForm);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -341,32 +326,31 @@
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(280, 336);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Bankalar";
-            this.chart1.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Bankalar";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(477, 260);
             this.chart1.TabIndex = 10;
             // 
             // chart2
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart2.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(813, 336);
             this.chart2.Name = "chart2";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series4.Legend = "Legend1";
-            series4.Name = "Faturalar";
-            this.chart2.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Faturalar";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(477, 260);
             this.chart2.TabIndex = 11;
             // 
@@ -477,7 +461,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button frmBillForm;
-        private System.Windows.Forms.Button btnBillForm;
         private System.Windows.Forms.Button btnBankForm;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel3;

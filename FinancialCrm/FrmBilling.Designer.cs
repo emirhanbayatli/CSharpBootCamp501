@@ -34,7 +34,6 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.btnBankForm = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -66,7 +65,6 @@
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.btnBankForm);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -82,7 +80,7 @@
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.btnLogOut.ForeColor = System.Drawing.Color.IndianRed;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 485);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 424);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnLogOut.Size = new System.Drawing.Size(250, 50);
@@ -90,6 +88,7 @@
             this.btnLogOut.Text = "Çıkış Yap";
             this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // button6
             // 
@@ -98,7 +97,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 430);
+            this.button6.Location = new System.Drawing.Point(0, 369);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.button6.Size = new System.Drawing.Size(250, 50);
@@ -114,7 +113,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(0, 375);
+            this.button7.Location = new System.Drawing.Point(0, 314);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.button7.Size = new System.Drawing.Size(250, 50);
@@ -131,7 +130,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(0, 320);
+            this.button8.Location = new System.Drawing.Point(0, 259);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.button8.Size = new System.Drawing.Size(250, 50);
@@ -139,6 +138,7 @@
             this.button8.Text = "Banka Hareketleri";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button2
             // 
@@ -147,7 +147,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 265);
+            this.button2.Location = new System.Drawing.Point(0, 204);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.button2.Size = new System.Drawing.Size(250, 50);
@@ -155,22 +155,6 @@
             this.button2.Text = "Giderler";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 210);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(250, 50);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Faturalar";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // btnBankForm
             // 
@@ -412,7 +396,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnBankForm;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;

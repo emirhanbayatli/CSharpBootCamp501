@@ -65,7 +65,6 @@ namespace FinancialCrm
             value.BillAmount = amount;
             value.BillPeriod = period;
 
-
             db.SaveChanges();
             MessageBox.Show("Odeme Basarili Bir Sekilde Sistemde Guncellendi", "Odeme & Faturalar", MessageBoxButtons.OK, MessageBoxIcon.Information);
             var values = db.Bills.ToList();
@@ -84,6 +83,18 @@ namespace FinancialCrm
             FrmDashboard frm = new FrmDashboard();
             frm.Show();
             this.Hide();
+        }
+
+        private void button8_Click(object sender, System.EventArgs e)
+        {
+            FrmBankProcesses frm = new FrmBankProcesses();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnLogOut_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
         }
     }
 }

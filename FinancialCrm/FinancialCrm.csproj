@@ -67,6 +67,12 @@
     <Compile Include="FrmBanks.Designer.cs">
       <DependentUpon>FrmBanks.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBankProcesses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBankProcesses.Designer.cs">
+      <DependentUpon>FrmBankProcesses.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBilling.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBankProcesses.resx">
+      <DependentUpon>FrmBankProcesses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBanks.resx">
       <DependentUpon>FrmBanks.cs</DependentUpon>
     </EmbeddedResource>

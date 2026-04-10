@@ -82,11 +82,25 @@ namespace FinancialCrm
             this.Hide();
         }
 
-        private void btnBillForm_Click(object sender, EventArgs e)
+
+
+        private void frmBillForm_Click(object sender, EventArgs e)
         {
             FrmBilling frm = new FrmBilling();
             frm.Show();
             this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FrmBankProcesses frm = new FrmBankProcesses();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
