@@ -27,13 +27,13 @@ C# ve Windows Forms kullanılarak geliştirilen bu Finansal Müşteri İlişkile
 ![Dashboard Paneli](FinancialCrm/screenshots/dashboard.png)
 
 ### Bankalar ve Hesap Durumu
-![Bankalar Ekranı](FinancialCrm/screenshots/bankalar.png)
+![Bankalar Ekranı](FinancialCrm/screenshots/banka-hesap-yeni.png)
 
 ### Fatura ve Ödeme Takibi
 ![Faturalar Ekranı](FinancialCrm/screenshots/faturalar.png)
 
 ### Banka İşlemleri
-![Banka İşlemleri Ekranı](FinancialCrm/screenshots/banka_islemleri.png)
+![Banka İşlemleri Ekranı](FinancialCrm/screenshots/banka-islemleri-yeni.png)
 
 ### Giriş Ekranı
 ![Giriş Ekranı](FinancialCrm/screenshots/login.png)
