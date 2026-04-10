@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.frmBillForm = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.frmExpensesForm = new System.Windows.Forms.Button();
+            this.btnBillForm = new System.Windows.Forms.Button();
+            this.btnBankForm = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,13 +66,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(29)))), ((int)(((byte)(36)))));
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnLogOut);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.frmBillForm);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.frmExpensesForm);
+            this.panel1.Controls.Add(this.btnBillForm);
+            this.panel1.Controls.Add(this.btnBankForm);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -80,20 +80,20 @@
             this.panel1.Size = new System.Drawing.Size(250, 672);
             this.panel1.TabIndex = 0;
             // 
-            // button5
+            // btnLogOut
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.IndianRed;
-            this.button5.Location = new System.Drawing.Point(0, 450);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(250, 50);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Çıkış Yap";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLogOut.ForeColor = System.Drawing.Color.IndianRed;
+            this.btnLogOut.Location = new System.Drawing.Point(0, 450);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnLogOut.Size = new System.Drawing.Size(250, 50);
+            this.btnLogOut.TabIndex = 0;
+            this.btnLogOut.Text = "Çıkış Yap";
+            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button6
             // 
@@ -124,6 +124,7 @@
             this.button7.TabIndex = 2;
             this.button7.Text = "Dashboard";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -140,51 +141,51 @@
             this.button8.Text = "Banka Hareketleri";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // frmBillForm
+            // frmExpensesForm
             // 
-            this.frmBillForm.FlatAppearance.BorderSize = 0;
-            this.frmBillForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.frmBillForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.frmBillForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.frmBillForm.ForeColor = System.Drawing.Color.White;
-            this.frmBillForm.Location = new System.Drawing.Point(0, 250);
-            this.frmBillForm.Name = "frmBillForm";
-            this.frmBillForm.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.frmBillForm.Size = new System.Drawing.Size(250, 50);
-            this.frmBillForm.TabIndex = 4;
-            this.frmBillForm.Text = "Giderler";
-            this.frmBillForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.frmBillForm.Click += new System.EventHandler(this.frmBillForm_Click);
+            this.frmExpensesForm.FlatAppearance.BorderSize = 0;
+            this.frmExpensesForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.frmExpensesForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.frmExpensesForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.frmExpensesForm.ForeColor = System.Drawing.Color.White;
+            this.frmExpensesForm.Location = new System.Drawing.Point(0, 250);
+            this.frmExpensesForm.Name = "frmExpensesForm";
+            this.frmExpensesForm.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.frmExpensesForm.Size = new System.Drawing.Size(250, 50);
+            this.frmExpensesForm.TabIndex = 4;
+            this.frmExpensesForm.Text = "Giderler";
+            this.frmExpensesForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.frmExpensesForm.Click += new System.EventHandler(this.frmBillForm_Click);
             // 
-            // button4
+            // btnBillForm
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 200);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(250, 50);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Faturalar";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBillForm.FlatAppearance.BorderSize = 0;
+            this.btnBillForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnBillForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBillForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btnBillForm.ForeColor = System.Drawing.Color.White;
+            this.btnBillForm.Location = new System.Drawing.Point(0, 200);
+            this.btnBillForm.Name = "btnBillForm";
+            this.btnBillForm.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnBillForm.Size = new System.Drawing.Size(250, 50);
+            this.btnBillForm.TabIndex = 5;
+            this.btnBillForm.Text = "Faturalar";
+            this.btnBillForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button1
+            // btnBankForm
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 150);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(250, 50);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Bankalar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBankForm.FlatAppearance.BorderSize = 0;
+            this.btnBankForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(61)))), ((int)(((byte)(79)))));
+            this.btnBankForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBankForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btnBankForm.ForeColor = System.Drawing.Color.White;
+            this.btnBankForm.Location = new System.Drawing.Point(0, 150);
+            this.btnBankForm.Name = "btnBankForm";
+            this.btnBankForm.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnBankForm.Size = new System.Drawing.Size(250, 50);
+            this.btnBankForm.TabIndex = 6;
+            this.btnBankForm.Text = "Bankalar";
+            this.btnBankForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button3
             // 
@@ -424,13 +425,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button frmBillForm;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button frmExpensesForm;
+        private System.Windows.Forms.Button btnBillForm;
+        private System.Windows.Forms.Button btnBankForm;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
